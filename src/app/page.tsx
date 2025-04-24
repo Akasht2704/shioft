@@ -15,11 +15,12 @@ export default function HomePage() {
       <Hero />
       <About />
       <AboutSection/>
+      <StatsSection/>
       <Services />
       <Technologies/>
       <Testimonials />
       <Contact />
-      <StatsSection/>
+      
       <Clients/>
     </>
   )
