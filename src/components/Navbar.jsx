@@ -20,13 +20,13 @@ export default function Navbar() {
           <Link href="/" className="hover:text-blue-600 transition-colors duration-200">
             Home
           </Link>
-          <Link href="/about" className="hover:text-blue-600 transition-colors duration-200">
+          <Link href="https://shioftsitedemo.vercel.app/about" className="hover:text-blue-600 transition-colors duration-200">
             About
           </Link>
-          <Link href="#services" className="hover:text-blue-600 transition-colors duration-200">
+          <Link href="https://shioftsitedemo.vercel.app/#services" className="hover:text-blue-600 transition-colors duration-200">
             Services
           </Link>
-          <Link href="#contact" className="hover:text-blue-600 transition-colors duration-200">
+          <Link href="https://shioftsitedemo.vercel.app/#contact" className="hover:text-blue-600 transition-colors duration-200">
             Contact
           </Link>
         </div>
