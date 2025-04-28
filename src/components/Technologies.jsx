@@ -12,7 +12,11 @@ import {
     SiLaravel,
     SiMongodb,
     SiPostgresql,
+    SiTensorflow, 
+    SiPytorch, 
+    SiOpenai 
   } from 'react-icons/si'
+  import { FaRobot } from 'react-icons/fa'
   
   const techStack = [
     {
@@ -35,11 +39,7 @@ import {
       icon: <SiTypescript size={50} className="text-blue-600" />,
       description: 'A strongly typed superset of JavaScript for safer coding.'
     },
-    {
-      name: 'MySQL',
-      icon: <SiMysql size={50} className="text-blue-800" />,
-      description: 'A reliable relational database management system.'
-    },
+    
     {
       name: 'Docker',
       icon: <SiDocker size={50} className="text-cyan-400" />,
@@ -49,6 +49,11 @@ import {
       name: 'Node.js',
       icon: <SiNodedotjs size={50} className="text-green-500" />,
       description: 'A runtime environment for executing JavaScript on the server side.'
+    },
+    {
+      name: 'Laravel',
+      icon: <SiLaravel size={50} className="text-red-500" />,
+      description: 'A PHP framework for web artisans with expressive syntax and powerful tools.'
     },
     //{
     //  name: 'React Native',
@@ -66,10 +71,11 @@ import {
       description: 'A popular scripting language especially suited for web development.'
     },
     {
-      name: 'Laravel',
-      icon: <SiLaravel size={50} className="text-red-500" />,
-      description: 'A PHP framework for web artisans with expressive syntax and powerful tools.'
+      name: 'MySQL',
+      icon: <SiMysql size={50} className="text-blue-800" />,
+      description: 'A reliable relational database management system.'
     },
+    
     {
       name: 'MongoDB',
       icon: <SiMongodb size={50} className="text-green-600" />,
@@ -79,6 +85,26 @@ import {
       name: 'PostgreSQL',
       icon: <SiPostgresql size={50} className="text-blue-500" />,
       description: 'An advanced open-source relational database with enterprise features.'
+    },
+    {
+      name: 'TensorFlow',
+      icon: <SiTensorflow size={50} className="text-orange-500" />,
+      description: 'An end-to-end open-source platform for machine learning by Google.'
+    },
+    {
+      name: 'PyTorch',
+      icon: <SiPytorch size={50} className="text-red-500" />,
+      description: 'An open-source machine learning framework developed by Facebook AI Research.'
+    },
+    {
+      name: 'OpenAI',
+      icon: <SiOpenai size={50} className="text-green-400" />,
+      description: 'An AI research and deployment company known for models like GPT and DALL·E.'
+    },
+    {
+      name: 'AI Development',
+      icon: <FaRobot size={50} className="text-purple-400" />,
+      description: 'Building intelligent systems and models that mimic human capabilities.'
     },
   ]
   
