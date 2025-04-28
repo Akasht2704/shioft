@@ -1,8 +1,43 @@
 'use client'
 
 import { FaUser, FaEnvelope, FaCommentDots, FaPaperPlane } from 'react-icons/fa'
+import axios from 'axios'
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 export default function Contact() {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+  const router = useRouter();
+
+  const [status, setStatus] = useState(null)
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus('loading')
+
+    try {
+      const res = await axios.post('/api/interest',formData)
+
+      if (res.data.success) {
+        setStatus('success')
+        setFormData({ name: '', email: '',  message: '' })
+        router.push('/thank-you');
+      } else {
+        setStatus(result.error || 'Something went wrong')
+      }
+    } catch (error) {
+      setStatus('error')
+    }
+  }
   return (
     <section
       id="contact"
@@ -18,7 +53,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <form className="bg-white/70 backdrop-blur-md rounded-3xl shadow-2xl p-10 space-y-8">
+        <form onSubmit={handleSubmit} className="bg-white/70 backdrop-blur-md rounded-3xl shadow-2xl p-10 space-y-8">
           {/* Name Field */}
           <div className="flex items-center border border-gray-300 rounded-xl overflow-hidden transition-all focus-within:ring-2 focus-within:ring-blue-500">
             <div className="bg-blue-100 px-4 py-3">
@@ -26,6 +61,9 @@ export default function Contact() {
             </div>
             <input
               type="text"
+              name='name'
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Your Full Name"
               className="w-full px-4 py-3 text-gray-800 placeholder-gray-500 bg-transparent focus:outline-none"
             />
@@ -38,6 +76,9 @@ export default function Contact() {
             </div>
             <input
               type="email"
+              name='email'
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Your Email Address"
               className="w-full px-4 py-3 text-gray-800 placeholder-gray-500 bg-transparent focus:outline-none"
             />
@@ -49,6 +90,9 @@ export default function Contact() {
               <FaCommentDots className="text-blue-600 mt-1" />
             </div>
             <textarea
+              name='message'
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Your Message"
               rows={6}
               className="w-full px-4 py-3 text-gray-800 placeholder-gray-500 bg-transparent focus:outline-none resize-none"
