@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-4 text-gray-800">s
+          <h2 className="text-4xl font-bold mb-4 text-gray-800">
             Empowering Your Digital Growth
           </h2>
           <p className="text-gray-700 mb-4 text-lg leading-relaxed">
