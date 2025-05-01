@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next-on-pages --output-dir=.vercel/output",
+    "deploy": "wrangler pages deploy .vercel/output/static --project-name=shioftsite --branch=main",
     "start": "next start",
     "lint": "next lint"
   },
@@ -22,6 +23,7 @@
     "swiper": "^11.2.6"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.12",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
