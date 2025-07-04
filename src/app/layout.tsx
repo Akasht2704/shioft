@@ -5,13 +5,18 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Shioft Digital | Innovating the Future',
+  title: 'Shioft Digital Services',
   description: 'Welcome to our tech company website.',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        
+        <link rel="icon" href="https://shioft.com/img/shioftlogo.png" />
+        
+      </head>
       <body className="bg-white text-gray-900 font-sans">
         <Navbar />
         <main className="min-h-screen">{children}</main>
