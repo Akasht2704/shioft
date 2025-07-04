@@ -287,15 +287,16 @@ export default function Contact() {
     <FaComments className="text-5xl text-white drop-shadow" />
 
     <h2 className="text-4xl font-bold leading-snug">Let’s Connect</h2>
+    <h2 className="text-3xl font-bold leading-snug">9336237922</h2>
 
-    <p className="text-sm text-white/80">
+    <p className="text-lg text-white/80">
       Have a project in mind or just want to say hello? <br />
       Fill the form and let's get started.
     </p>
 
     <hr className="border-t border-white/20 my-4 w-2/3" />
 
-    <ul className="text-sm space-y-2 text-white/80">
+    <ul className="text-lg space-y-2 text-white/80">
       <li className="flex items-center gap-2">
         📧 <span>support@shioft.com</span>
       </li>
@@ -318,7 +319,7 @@ export default function Contact() {
         <form onSubmit={handleSubmit} className="p-6 md:p-8 space-y-4">
           {/* Name */}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="name" className="block text-md font-medium text-gray-700 mb-1">
               Full Name
             </label>
             <input
@@ -335,7 +336,7 @@ export default function Contact() {
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="email" className="block text-md font-medium text-gray-700 mb-1">
               Email Address
             </label>
             <input
@@ -352,7 +353,7 @@ export default function Contact() {
 
           {/* Message */}
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="message" className="block text-md font-medium text-gray-700 mb-1">
               Message
             </label>
             <textarea
@@ -371,7 +372,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-700 px-5 py-2.5 text-white font-medium text-sm transition-all"
+            className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-700 px-5 py-2.5 text-white font-medium text-md transition-all"
           >
             <FaPaperPlane />
             {status === 'loading' ? 'Sending...' : 'Send Message'}

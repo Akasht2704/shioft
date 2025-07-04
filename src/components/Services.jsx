@@ -13,8 +13,12 @@ import {
   FaCheckCircle,
   FaBrain,
   FaMicrochip,
-  FaSearch, 
+  FaSearch,
+  FaBullhorn,
+  FaCode,
+  FaPalette 
 } from 'react-icons/fa'
+
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
@@ -51,12 +55,7 @@ const services = [
     description: 'Smart solutions using AI/ML for automation.',
     icon: <FaRobot className="text-5xl text-yellow-500 mb-4" />,
   },
-  { 
-    slug: 'natural-language-processing', 
-    title: 'Natural Language Processing (NLP)',
-    description: 'AI models that understand and generate human language.',
-    icon: <FaBrain className="text-5xl text-teal-500 mb-4" />,
-  },
+  
   {
     slug: 'computer-vision',
     title: 'Computer Vision',
@@ -73,7 +72,7 @@ const services = [
     slug: 'ui-ux-design',
     title: 'UI/UX Design',
     description: 'Beautiful and user-friendly interface designs.',
-    icon: <FaPaintBrush className="text-5xl text-red-500 mb-4" />,
+    icon: <FaPalette className="text-5xl text-red-500 mb-4" />,
   },
   { 
     slug:'qa-testing',
@@ -86,6 +85,17 @@ const services = [
     title: 'Support & Maintenance',
     description: 'Ongoing support for your apps and services.',
     icon: <FaHeadset className="text-5xl text-orange-600 mb-4" />,
+  },
+  {
+    slug:'seo',
+    title: "SEO",
+    description: "Optimizing your website for search engines to boost visibility and drive organic traffic.",
+    icon: <FaSearch className="text-green-600 text-3xl mb-4" />,
+  },
+  { slug:'social-media-marketing',
+    title: "Social Media Marketing",
+    description: "Creating and managing impactful social media campaigns to grow your brand presence online.",
+    icon: <FaBullhorn className="text-purple-600 text-3xl mb-4" />,
   },
 ]
 
