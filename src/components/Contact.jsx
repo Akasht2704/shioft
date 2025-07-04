@@ -276,14 +276,43 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-3xl shadow-lg overflow-hidden">
         
         {/* Left Section */}
-        <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-full p-8 text-white flex flex-col justify-center items-start space-y-4">
-          <FaComments className="text-5xl" />
-          <h2 className="text-3xl font-bold">Let’s Connect</h2>
-          <p className="text-sm opacity-80">
-            Have a project in mind or just want to say hello? We'd love to hear from you.
-          </p>
-          <div className="mt-auto text-xs text-white/50">We usually respond within 24 hours.</div>
-        </div>
+        <div className="relative bg-gradient-to-br from-blue-600 to-indigo-700 h-full p-10 text-white flex flex-col justify-center space-y-6 overflow-hidden rounded-l-3xl">
+
+  {/* Decorative Background Circle */}
+  <div className="absolute -top-16 -left-16 w-64 h-64 bg-indigo-900 opacity-20 rounded-full z-0"></div>
+  <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-800 opacity-10 rounded-full z-0"></div>
+
+  {/* Content */}
+  <div className="relative z-10 space-y-4">
+    <FaComments className="text-5xl text-white drop-shadow" />
+
+    <h2 className="text-4xl font-bold leading-snug">Let’s Connect</h2>
+
+    <p className="text-sm text-white/80">
+      Have a project in mind or just want to say hello? <br />
+      Fill the form and let's get started.
+    </p>
+
+    <hr className="border-t border-white/20 my-4 w-2/3" />
+
+    <ul className="text-sm space-y-2 text-white/80">
+      <li className="flex items-center gap-2">
+        📧 <span>support@shioft.com</span>
+      </li>
+      <li className="flex items-center gap-2">
+        📍 <span>Gurugram, India</span>
+      </li>
+      <li className="flex items-center gap-2">
+        ⏱️ <span>Mon – Fri, 9:00AM – 6:00PM</span>
+      </li>
+    </ul>
+  </div>
+
+  <div className="relative z-10 mt-auto text-xs text-white/50">
+    We usually respond within 24 hours.
+  </div>
+</div>
+
 
         {/* Right Section - Form */}
         <form onSubmit={handleSubmit} className="p-6 md:p-8 space-y-4">
@@ -334,7 +363,7 @@ export default function Contact() {
               rows={4}
               required
               className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"
-              placeholder="Write something..."
+              placeholder="Write your query here..."
             />
           </div>
 
