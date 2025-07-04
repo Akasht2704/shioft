@@ -98,7 +98,7 @@ export default function Clients() {
               <img
                 src={client.img}
                 alt={client.name}
-                className="h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300 mb-2"
+                className="h-12 w-auto grayscale hover:grayscale-0 transition-all duration-300 mb-2"
               />
               
             </div>

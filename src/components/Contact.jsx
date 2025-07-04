@@ -115,12 +115,135 @@
 
 
 
+// 'use client'
+
+// import { useState } from 'react'
+// import { useRouter } from 'next/navigation'
+// import axios from 'axios'
+// import { FaPaperPlane } from 'react-icons/fa'
+
+// export default function Contact() {
+//   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
+//   const [status, setStatus] = useState(null)
+//   const router = useRouter()
+
+//   const handleChange = (e) => {
+//     setFormData({ ...formData, [e.target.name]: e.target.value })
+//   }
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault()
+//     setStatus('loading')
+//     try {
+//       const res = await axios.post('/api/interest', formData)
+//       if (res.data.success) {
+//         setStatus('success')
+//         setFormData({ name: '', email: '', message: '' })
+//         router.push('/thank-you')
+//       } else {
+//         setStatus('error')
+//       }
+//     } catch (error) {
+//       setStatus('error')
+//     }
+//   }
+
+//   return (
+//     <section className="py-20 px-4 bg-background" id="contact">
+//       <div className="max-w-xl mx-auto space-y-8">
+//         <div className="text-center">
+//           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+//             Let’s Talk
+//           </h2>
+//           <p className="mt-2 text-gray-600 text-base sm:text-lg">
+//             Have a project or just want to say hi? Fill the form below.
+//           </p>
+//         </div>
+
+//         <form
+//           onSubmit={handleSubmit}
+//           className="space-y-6 bg-white border border-gray-200 rounded-2xl shadow-sm p-8"
+//         >
+//           {/* Name */}
+//           <div className="grid w-full items-center gap-1.5">
+//             <label htmlFor="name" className="text-base font-medium text-gray-700">
+//               Full Name
+//             </label>
+//             <input
+//               type="text"
+//               id="name"
+//               name="name"
+//               value={formData.name}
+//               onChange={handleChange}
+//               placeholder="Enter your name"
+//               className="border border-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 px-4 py-2 w-full"
+//               required
+//             />
+//           </div>
+
+//           {/* Email */}
+//           <div className="grid w-full items-center gap-1.5">
+//             <label htmlFor="email" className="text-base font-medium text-gray-700">
+//               Email Address
+//             </label>
+//             <input
+//               type="email"
+//               id="email"
+//               name="email"
+//               value={formData.email}
+//               onChange={handleChange}
+//               placeholder="you@example.com"
+//               className="border border-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 px-4 py-2 w-full"
+//               required
+//             />
+//           </div>
+
+//           {/* Message */}
+//           <div className="grid w-full items-center gap-1.5">
+//             <label htmlFor="message" className="text-base font-medium text-gray-700">
+//               Message
+//             </label>
+//             <textarea
+//               id="message"
+//               name="message"
+//               value={formData.message}
+//               onChange={handleChange}
+//               placeholder="Type your message here..."
+//               rows={5}
+//               className="border border-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 px-4 py-2 w-full resize-none"
+//               required
+//             ></textarea>
+//           </div>
+
+//           {/* Button */}
+//           <button
+//             type="submit"
+//             disabled={status === 'loading'}
+//             className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white font-medium text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+//           >
+//             <FaPaperPlane className="text-md" />
+//             {status === 'loading' ? 'Sending...' : 'Send Message'}
+//           </button>
+
+//           {/* Feedback */}
+//           {status === 'error' && (
+//             <p className="text-red-500 text-sm mt-2 text-center">
+//               Something went wrong. Please try again.
+//             </p>
+//           )}
+//         </form>
+//       </div>
+//     </section>
+//   )
+// }
+
 'use client'
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import axios from 'axios'
 import { FaPaperPlane } from 'react-icons/fa'
+import { FaComments } from 'react-icons/fa6'
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
@@ -149,24 +272,24 @@ export default function Contact() {
   }
 
   return (
-    <section className="py-20 px-4 bg-background" id="contact">
-      <div className="max-w-xl mx-auto space-y-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Let’s Talk
-          </h2>
-          <p className="mt-2 text-gray-600 text-base sm:text-lg">
-            Have a project or just want to say hi? Fill the form below.
+    <section id="contact" className="py-16 px-4 bg-gray-50">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-3xl shadow-lg overflow-hidden">
+        
+        {/* Left Section */}
+        <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-full p-8 text-white flex flex-col justify-center items-start space-y-4">
+          <FaComments className="text-5xl" />
+          <h2 className="text-3xl font-bold">Let’s Connect</h2>
+          <p className="text-sm opacity-80">
+            Have a project in mind or just want to say hello? We'd love to hear from you.
           </p>
+          <div className="mt-auto text-xs text-white/50">We usually respond within 24 hours.</div>
         </div>
 
-        <form
-          onSubmit={handleSubmit}
-          className="space-y-6 bg-white border border-gray-200 rounded-2xl shadow-sm p-8"
-        >
+        {/* Right Section - Form */}
+        <form onSubmit={handleSubmit} className="p-6 md:p-8 space-y-4">
           {/* Name */}
-          <div className="grid w-full items-center gap-1.5">
-            <label htmlFor="name" className="text-base font-medium text-gray-700">
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
               Full Name
             </label>
             <input
@@ -175,15 +298,15 @@ export default function Contact() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Enter your name"
-              className="border border-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 px-4 py-2 w-full"
               required
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="Your name"
             />
           </div>
 
           {/* Email */}
-          <div className="grid w-full items-center gap-1.5">
-            <label htmlFor="email" className="text-base font-medium text-gray-700">
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
               Email Address
             </label>
             <input
@@ -192,15 +315,15 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="you@example.com"
-              className="border border-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 px-4 py-2 w-full"
               required
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="you@example.com"
             />
           </div>
 
           {/* Message */}
-          <div className="grid w-full items-center gap-1.5">
-            <label htmlFor="message" className="text-base font-medium text-gray-700">
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
               Message
             </label>
             <textarea
@@ -208,26 +331,26 @@ export default function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Type your message here..."
-              rows={5}
-              className="border border-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 px-4 py-2 w-full resize-none"
+              rows={4}
               required
-            ></textarea>
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"
+              placeholder="Write something..."
+            />
           </div>
 
-          {/* Button */}
+          {/* Submit */}
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white font-medium text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-700 px-5 py-2.5 text-white font-medium text-sm transition-all"
           >
-            <FaPaperPlane className="text-md" />
+            <FaPaperPlane />
             {status === 'loading' ? 'Sending...' : 'Send Message'}
           </button>
 
-          {/* Feedback */}
+          {/* Status Feedback */}
           {status === 'error' && (
-            <p className="text-red-500 text-sm mt-2 text-center">
+            <p className="text-red-500 text-xs text-center mt-2">
               Something went wrong. Please try again.
             </p>
           )}
@@ -236,3 +359,5 @@ export default function Contact() {
     </section>
   )
 }
+
+
