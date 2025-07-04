@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Tech Company | Innovating the Future',
+  title: 'Shioft Digital | Innovating the Future',
   description: 'Welcome to our tech company website.',
 }
 
