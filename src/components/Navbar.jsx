@@ -78,10 +78,10 @@ export default function Navbar() {
         {/* Logo + Brand */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="https://shioft.com/img/shioftlogo.png"
+            src="/images/shioftlogo.png"
             alt="Logo"
-            width={40}
-            height={40}
+            width={70}
+            height={70}
             className="rounded-full"
           />
           <span className="text-2xl font-bold text-blue-600 tracking-tight">Shioft Digital</span>
@@ -96,7 +96,7 @@ export default function Navbar() {
           <Link href="/about" className="hover:text-blue-600 transition-colors duration-200">
             About
           </Link>
-          <Link href="/#services" className="hover:text-blue-600 transition-colors duration-200">
+          <Link href="/services" className="hover:text-blue-600 transition-colors duration-200">
             Services
           </Link>
           <Link href="/#contact" className="hover:text-blue-600 transition-colors duration-200">

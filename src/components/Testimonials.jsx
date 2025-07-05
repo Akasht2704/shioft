@@ -143,11 +143,11 @@ export default function Testimonials() {
           {testimonials.map((t, idx) => (
             <div key={idx} className="px-4">
               <div className="bg-white p-8 rounded-3xl shadow-xl border hover:shadow-2xl transition-all duration-300 h-full flex flex-col items-center text-center">
-                <img
+                {/* <img
                   src={t.image}
                   alt={t.name}
                   className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-blue-100"
-                />
+                /> */}
                
                 <p className="text-gray-700 italic text-md md:text-lg leading-relaxed mb-6">"{t.quote}"</p>
                 <div className="mt-auto">

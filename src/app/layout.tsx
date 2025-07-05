@@ -12,11 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        
-        <link rel="icon" href="https://shioft.com/img/shioftlogo.png" />
-        
-      </head>
+      
       <body className="bg-white text-gray-900 font-sans">
         <Navbar />
         <main className="min-h-screen">{children}</main>

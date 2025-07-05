@@ -132,7 +132,7 @@ export default function Hero() {
           className="flex justify-center"
         >
           <img
-            src="https://shioft.com/img/hero.png"
+            src="/images/hero.png"
             alt="Hero Illustration"
             className="w-full max-w-md md:max-w-lg rounded-xl shadow-xl"
           />

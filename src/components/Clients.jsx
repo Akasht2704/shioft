@@ -76,6 +76,11 @@ export default function Clients() {
       img: "https://sarafpartners.com/wp-content/uploads/2025/06/SarafAndPartnersLogo-1-768x111.png",
       bgColor: "#1F2937", // dark gray
     },
+    {
+      name: "Break Through",
+      img: "https://inbreakthrough.org/wp-content/themes/breakthrough/dist/images/bt_new_logo.png",
+      bgColor: "#c61d22", // dark gray
+    },
   ];
 
   return (
@@ -88,7 +93,7 @@ export default function Clients() {
           We are proud to have worked with some of the world's leading tech companies.
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 place-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 place-items-center">
           {clients.map((client, index) => (
             <div
               key={index}
@@ -98,7 +103,7 @@ export default function Clients() {
               <img
                 src={client.img}
                 alt={client.name}
-                className="h-12 w-auto grayscale hover:grayscale-0 transition-all duration-300 mb-2"
+                className="h-12 w-auto hover:grayscale-0 transition-all duration-300 mb-2"
               />
               
             </div>
