@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
           className="flex justify-center"
         >
           <img
-            src="https://shioft.com/img/about.png"
+            src="/images/about.png"
             alt="Tech Illustration"
             className="w-[90%] md:w-[100%] max-w-md rounded-md shadow-lg"
             style={{ backgroundColor: '#ffffff' }}
