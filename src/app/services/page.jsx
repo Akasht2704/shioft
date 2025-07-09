@@ -108,11 +108,11 @@ const services = [
     description: `Our team builds high-performing, cross-platform mobile apps for Android and iOS using Flutter and React Native, ensuring excellent user experiences.`,
     img: '/images/mobile-app-development-service.png',
   },
-  // {
-  //   title: 'Cloud Solutions',
-  //   description: `We offer scalable cloud infrastructure setup and DevOps automation using AWS, Azure, or GCP to power modern applications with reliability.`,
-  //   img: '/your-images/cloud.jpg',
-  // },
+     {
+       title: 'Cloud Solutions',
+       description: `We offer scalable cloud infrastructure setup and DevOps automation using AWS, Azure, or GCP to power modern applications with reliability.`,
+       img: '/images/cloud-computing.jpg',
+     },
   // {
   //   title: 'E-commerce App Development',
   //   description: `We design and develop feature-rich e-commerce platforms that are fast, secure, and easy to manage, supporting integrations like Stripe, Razorpay, etc.`,

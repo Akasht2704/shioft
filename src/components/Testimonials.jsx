@@ -73,40 +73,34 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const testimonials = [
   {
-    name: 'Anjali Verma',
-    role: 'Product Manager, TechNova',
+    name: 'Aamith Menon',
+    role: 'CTO, Redberyl',
     quote:
       'Working with Shioft Digital has been an absolute pleasure. Their expertise in React and backend systems helped us scale our product quickly.',
     image: 'https://randomuser.me/api/portraits/women/1.jpg',
   },
   {
-    name: 'Ravi Patel',
-    role: 'Founder, EduLaunch',
+    name: 'Amit Kumar',
+    role: 'Manager, BreakThrough',
     quote:
       'They delivered beyond expectations. Professional, innovative, and always on time. Highly recommended!',
     image: 'https://randomuser.me/api/portraits/men/2.jpg',
   },
   {
-    name: 'Neha Sharma',
-    role: 'CTO, HealthSphere',
+    name: 'Mahesh',
+    role: 'Poject Manager, ByteCraft',
     quote:
       'Their tech team understood our complex needs and provided seamless solutions. Great communication and support throughout.',
     image: 'https://randomuser.me/api/portraits/women/3.jpg',
   },
   {
-    name: 'Amit Kulkarni',
-    role: 'CEO, MarketGenius',
+    name: 'Akash',
+    role: '',
     quote:
       'Superb experience! We saw huge improvements in our product quality and delivery speed after partnering with them.',
     image: 'https://randomuser.me/api/portraits/men/4.jpg',
   },
-  {
-    name: 'Divya Singh',
-    role: 'CMO, FinSavvy',
-    quote:
-      'They crafted a seamless digital experience for our customers. Would love to work with them again.',
-    image: 'https://randomuser.me/api/portraits/women/5.jpg',
-  },
+ 
 ]
 
 export default function Testimonials() {
@@ -142,9 +136,9 @@ export default function Testimonials() {
         <Slider {...settings}>
           {testimonials.map((t, idx) => (
             <div key={idx} className="px-4">
-              <div className="bg-white p-8 rounded-3xl shadow-xl border hover:shadow-2xl transition-all duration-300 h-full flex flex-col items-center text-center">
+              <div className="bg-white p-8 rounded-3xl shadow-xl border hover:shadow-2xl transition-all duration-300 h-[300px] flex flex-col items-center text-center">
                 {/* <img
-                  src={t.image}
+                  src={t.image}  
                   alt={t.name}
                   className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-blue-100"
                 /> */}

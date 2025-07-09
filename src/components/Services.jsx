@@ -16,7 +16,8 @@ import {
   FaSearch,
   FaBullhorn,
   FaCode,
-  FaPalette 
+  FaPalette, 
+  FaEnvelope
 } from 'react-icons/fa'
 
 
@@ -56,12 +57,12 @@ const services = [
     icon: <FaRobot className="text-5xl text-yellow-500 mb-4" />,
   },
   
-  {
-    slug: 'computer-vision',
-    title: 'Computer Vision',
-    description: 'AI that interprets and analyzes images and videos.',
-    icon: <FaMicrochip className="text-5xl text-indigo-500 mb-4" />,
-  },
+   {
+     slug: 'computer-vision',
+     title: 'Computer Vision',
+     description: 'AI that interprets and analyzes images and videos.',
+     icon: <FaMicrochip className="text-5xl text-indigo-500 mb-4" />,
+   },
   { 
     slug:'ai-consulting',
     title: 'AI Consulting',
@@ -69,7 +70,7 @@ const services = [
     icon: <FaSearch className="text-5xl text-emerald-500 mb-4" />,
   },
   { 
-    slug: 'ui-ux-design',
+    slug: 'web-design',
     title: 'UI/UX Design',
     description: 'Beautiful and user-friendly interface designs.',
     icon: <FaPalette className="text-5xl text-red-500 mb-4" />,
@@ -88,7 +89,7 @@ const services = [
   },
   {
     slug:'seo',
-    title: "SEO",
+    title: "Search Engine Optimization ",
     description: "Optimizing your website for search engines to boost visibility and drive organic traffic.",
     icon: <FaSearch className="text-green-600 text-3xl mb-4" />,
   },
@@ -97,6 +98,13 @@ const services = [
     description: "Creating and managing impactful social media campaigns to grow your brand presence online.",
     icon: <FaBullhorn className="text-purple-600 text-3xl mb-4" />,
   },
+  {
+    slug: 'email-sms-marketing',
+    title: 'Email/SMS Marketing',
+    description: 'Connect with customers directly through email and SMS campaigns.',
+    icon: <FaEnvelope className="text-3xl text-yellow-600 mb-4" />,
+}
+ 
 ]
 
 export default function Services() {
