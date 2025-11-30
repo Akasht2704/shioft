@@ -197,7 +197,7 @@ export default function Contact() {
       }
 
       // Submit form after captcha passed
-      const res = await axios.post('/api/interest', formData)
+      const res = await axios.post('/api/register', formData)
 
       if (res.data.success) {
         setStatus('success')
