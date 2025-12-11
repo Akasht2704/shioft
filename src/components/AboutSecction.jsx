@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-[#ffffff]" id="why-us">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="py-20 bg-[#ffffff]" id="why-us px-8">
+      <div className="max-w-7xl mx-auto px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         <motion.div
           initial={{ opacity: 0, x: -50 }}
