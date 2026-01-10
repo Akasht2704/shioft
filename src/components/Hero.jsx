@@ -81,7 +81,7 @@ export default function Hero() {
         <div className="absolute bottom-[-5%] right-[-10%] w-[70%] h-[70%] bg-indigo-600/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 md:py-32 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-16 py-20 md:py-20 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left - Text Content */}
         <div className="space-y-8 md:space-y-10">
           <motion.h1
@@ -140,18 +140,18 @@ export default function Hero() {
 
         {/* Right - Your new image */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.92, x: 60 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ duration: 1.3, delay: 0.4, type: "spring", stiffness: 90 }}
-          className="relative hidden md:block"
-        >
-          {/* Optional subtle glow matching image lights */}
-          <div className="absolute inset-[-15%] bg-gradient-to-tr from-cyan-600/12 via-blue-600/8 to-transparent blur-2xl opacity-70 rounded-full" />
-          
+          initial={{ opacity: 0, scale: 0.92, y: 40 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1.3, delay: 0.5, type: "spring", stiffness: 90 }}
+          className="relative mt-12 md:mt-0 flex justify-center"
+       >
+       {/* Optional glow (same as before) */}
+         <div className="absolute inset-[-15%] bg-gradient-to-tr from-cyan-600/12 via-blue-600/8 to-transparent blur-2xl opacity-70 rounded-full" />
+  
           <img
-            src="/images/cloud-computing.jpg"  // ← Replace with your actual image path
+            src="/images/cloud-computing.jpg"  // ← apni image ka path yahan daalo
             alt="Digital Transformation Illustration"
-            className="relative w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10 object-cover"
+            className="w-full max-w-md sm:max-w-lg md:max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10 object-cover"
           />
         </motion.div>
       </div>
