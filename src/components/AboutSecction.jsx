@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
             Empowering Your Digital Growth
           </h2>
           <p className="text-gray-700 mb-4 text-lg leading-relaxed">
-            At <span className="font-semibold text-blue-600">TechCompany</span>, we create smart, scalable solutions tailored for your success. 
+            At <span className="font-semibold text-blue-600">Shioft</span>, we create smart, scalable solutions tailored for your success. 
             Our expert team transforms ideas into innovative digital products that perform.
           </p>
           <ul className="list-disc list-inside text-gray-700 space-y-2">

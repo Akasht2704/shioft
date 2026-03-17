@@ -1,18 +1,4 @@
-/*export default function About() {
-    return (
-      <section className="max-w-5xl mx-auto py-16 px-4" id="about">
-        <h2 className="text-3xl font-bold mb-6 text-center">About Us</h2>
-        <p className="text-gray-700 text-lg leading-relaxed">
-          We are a tech company committed to solving real-world problems using innovative technologies.
-          With a team of experienced engineers and designers, we deliver top-tier solutions for businesses of all sizes.
-        </p>
-      </section>
-    )
-  }
-
- */ 
-
-  import { FaLightbulb, FaUsers, FaCogs } from 'react-icons/fa'
+import { FaLightbulb, FaUsers, FaCogs } from 'react-icons/fa'
 
 export default function About() {
   return (
@@ -23,8 +9,7 @@ export default function About() {
         {/* Text Content */}
         <div>
           <p className="text-gray-700 text-lg leading-relaxed mb-6">
-            We are a tech-driven company committed to solving real-world problems through innovative, scalable, and reliable technology.
-            Our team of passionate engineers, creative designers, and solution architects work together to bring ideas to life.
+            We are a technology-driven company focused on solving real-world business challenges through innovative, scalable, and reliable digital solutions.
           </p>
           <p className="text-gray-700 text-lg leading-relaxed">
             Whether you're a startup or an enterprise, we have the expertise to transform your vision into a powerful digital solution.
