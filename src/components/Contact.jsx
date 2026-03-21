@@ -157,7 +157,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import axios from 'axios'
-import { FaPaperPlane } from 'react-icons/fa'
+import { FaPaperPlane, FaMapPin ,FaLocationArrow } from 'react-icons/fa'
 import { FaComments } from 'react-icons/fa6'
 import ReCAPTCHA from 'react-google-recaptcha'
 
@@ -231,7 +231,7 @@ export default function Contact() {
             <hr className="border-t border-white/20 my-4 w-2/3" />
             <ul className="text-lg space-y-2 text-white/80">
               <li className="flex items-center gap-2">📧 <span>support@shioft.com</span></li>
-              <li className="flex items-center gap-2">📍 <span>Gurugram, India</span></li>
+              <li className="flex items-center gap-2"> <FaLocationArrow /><span> 151, Paras Trade Center Gwal Pahari, Gurugram, Haryana</span></li>
               <li className="flex items-center gap-2">⏱️ <span>Mon – Fri, 9:00AM – 6:00PM</span></li>
             </ul>
           </div>
