@@ -29,16 +29,15 @@ export default function Footer() {
           <h4 className="text-xl font-semibold mb-2">Connect with Us</h4>
           <div className="flex justify-center md:justify-start space-x-4 mt-4">
             <a href="#" className="text-gray-400 hover:text-white transition text-xl"><FaFacebookF /></a>
-            <a href="#" className="text-gray-400 hover:text-white transition text-xl"><FaLinkedinIn /></a>
+            <a href="https://www.linkedin.com/company/shioft/" className="text-gray-400 hover:text-white transition text-xl"><FaLinkedinIn /></a>
             <a href="#" className="text-gray-400 hover:text-white transition text-xl"><FaTwitter /></a>
-            <a href="#" className="text-gray-400 hover:text-white transition text-xl"><FaGithub /></a>
           </div>
         </div>
       </div>
 
       {/* Copyright */}
       <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} TechCompany. All rights reserved.
+        © {new Date().getFullYear()} Shioft Digital. All rights reserved.
       </div>
     </footer>
   )
