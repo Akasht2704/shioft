@@ -29,7 +29,7 @@ export default function Footer() {
           <h4 className="text-xl font-semibold mb-2">Connect with Us</h4>
           <div className="flex justify-center md:justify-start space-x-4 mt-4">
             <a href="#" className="text-gray-400 hover:text-white transition text-xl"><FaFacebookF /></a>
-            <a href="https://www.linkedin.com/company/shioft/" className="text-gray-400 hover:text-white transition text-xl"><FaLinkedinIn /></a>
+            <a href="https://www.linkedin.com/company/shioft/" target='_blank' className="text-gray-400 hover:text-white transition text-xl"><FaLinkedinIn /></a>
             <a href="#" className="text-gray-400 hover:text-white transition text-xl"><FaTwitter /></a>
           </div>
         </div>
