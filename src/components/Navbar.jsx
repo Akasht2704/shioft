@@ -50,7 +50,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/images/shioftlogo.png"
-            alt="Logo"
+            alt="Shioft Digital logo"
             width={60}
             height={60}
             className="rounded-full"

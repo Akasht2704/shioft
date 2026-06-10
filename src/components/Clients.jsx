@@ -27,7 +27,7 @@ export default function Clients() {
     },
     {
       name: "Break Through",
-      img: "https://inbreakthrough.org/wp-content/themes/breakthrough/dist/images/bt_new_logo.png",
+      img: "https://inbreakthrough.org/wp-content/uploads/2026/04/Breakthrough_Logo-1-scaled.png",
       bgColor: "#c61d22", // dark gray
     },
   ];

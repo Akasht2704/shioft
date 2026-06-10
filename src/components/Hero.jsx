@@ -82,7 +82,7 @@ export default function Hero() {
   
           <img
             src="/images/cloud-computing.jpg"  // ← apni image ka path yahan daalo
-            alt="Digital Transformation Illustration"
+            alt="Shioft Digital cloud computing and web development services"
             className="w-full max-w-md sm:max-w-lg md:max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10 object-cover"
           />
         </motion.div>

@@ -126,7 +126,7 @@ const services = [
   {
     title: 'UI/UX Design',
     description: `We design clean, engaging, and user-friendly interfaces that elevate your brand and deliver intuitive experiences to your users.`,
-    img: 'images/website-designing-service.png',
+    img: '/images/website-designing-service.png',
   },
   // {
   //   title: 'QA & Testing',
@@ -154,7 +154,7 @@ const services = [
 export default function Services() {
   return (
     <section className="bg-white py-16 px-4 md:px-10" id="services">
-      <h2 className="text-4xl font-bold text-center mb-14">Our Services</h2>
+      <h1 className="text-4xl font-bold text-center mb-14">Our Services</h1>
 
       <div className="space-y-20 px-40 py-8 sm:px-0 sm:py-0 md:px-12 md:py-4">
         {services.map((service, index) => (
@@ -175,7 +175,7 @@ export default function Services() {
               <div className="w-full h-auto bg-gray-200 rounded-lg overflow-hidden shadow-md">
                 <img
                   src={service.img}
-                  alt={service.title}
+                  alt={`${service.title} — Shioft Digital`}
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -1,4 +1,5 @@
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa'
+import Link from 'next/link'
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -14,15 +15,15 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <nav aria-label="Footer navigation">
           <h4 className="text-xl font-semibold mb-2">Quick Links</h4>
           <ul className="text-gray-400 space-y-2 text-sm">
-            <li><a href="#about" className="hover:text-white transition">About Us</a></li>
-            <li><a href="#services" className="hover:text-white transition">Services</a></li>
-            <li><a href="#technologies" className="hover:text-white transition">Technologies</a></li>
-            <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
+            <li><Link href="/about" className="hover:text-white transition">About Us</Link></li>
+            <li><Link href="/services" className="hover:text-white transition">Services</Link></li>
+            <li><Link href="/#technologies" className="hover:text-white transition">Technologies</Link></li>
+            <li><Link href="/#contact" className="hover:text-white transition">Contact</Link></li>
           </ul>
-        </div>
+        </nav>
 
         {/* Social Media */}
         <div>

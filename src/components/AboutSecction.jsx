@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-[#ffffff]" id="why-us px-8">
+    <section className="py-20 bg-[#ffffff]" id="why-us">
       <div className="max-w-7xl mx-auto px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         <motion.div
@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
         >
           <img
             src="/images/about.png"
-            alt="Tech Illustration"
+            alt="Shioft Digital team delivering technology solutions"
             className="w-[90%] md:w-[100%] max-w-md rounded-md shadow-lg"
             style={{ backgroundColor: '#ffffff' }}
           />

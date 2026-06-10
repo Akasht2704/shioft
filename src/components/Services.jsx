@@ -51,7 +51,7 @@ const services = [
     icon: <FaShoppingCart className="text-5xl text-pink-500 mb-4" />,
   },
   { 
-    slug: 'ai-machine-learning',
+    slug: 'ai-ml',
     title: 'AI / Machine Learning',
     description: 'Smart solutions using AI/ML for automation.',
     icon: <FaRobot className="text-5xl text-yellow-500 mb-4" />,
@@ -93,7 +93,7 @@ const services = [
     description: "Optimizing your website for search engines to boost visibility and drive organic traffic.",
     icon: <FaSearch className="text-green-600 text-3xl mb-4" />,
   },
-  { slug:'social-media-marketing',
+  { slug:'smm',
     title: "Social Media Marketing",
     description: "Creating and managing impactful social media campaigns to grow your brand presence online.",
     icon: <FaBullhorn className="text-purple-600 text-3xl mb-4" />,
